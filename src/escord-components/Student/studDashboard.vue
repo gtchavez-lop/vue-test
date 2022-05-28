@@ -179,9 +179,6 @@ export default {
         .get('/api/getsrmsid/' + this.$route.params.student_number)
         .then(({ data }) => {
           this.srms_id = data[0].srms_id;
-        })
-        .catch(({ response }) => {
-          console.error(response);
         });
     },
   },

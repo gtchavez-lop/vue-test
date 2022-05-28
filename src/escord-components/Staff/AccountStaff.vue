@@ -351,9 +351,6 @@ export default {
           lastname: this.getcurrentUser.lastname,
           email: this.getcurrentUser.email,
         })
-        .then((response) => {
-          console.log('update staff accounts', response.data);
-        })
         .catch((errors) => {
           this.error = errors.response.data;
         });
