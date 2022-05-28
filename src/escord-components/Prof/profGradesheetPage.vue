@@ -442,7 +442,6 @@ export default {
  // ...mapMutations(['setspeciGS']),
     sendArrayofData(index){
 
-        console.log(index);
 
    // this.updateGradesheetData({route:index.id}, this.index);
 
@@ -450,7 +449,6 @@ export default {
         axios.put('/api/addgs/'+index.id, index).then((response)=>{
         
 
-            console.log('create professor accounts' , response.data);
 
             
              }).catch((errors)=>{
@@ -511,10 +509,6 @@ export default {
   
           this.addStudent()
             
-          console.log("Student is added successfully.")
-        }
-        else {
-          console.log("Cannot add student to the gradesheet.");
         }
     },
 
@@ -525,7 +519,6 @@ export default {
             status_archieve: '1', }).then((response)=>{
           
        
-                  console.log('archieve successfull');
                   
                 //add notification time out here 
 
@@ -533,7 +526,6 @@ export default {
     
     }).catch((errors)=>{
           
-                 console.log('error in archeiveing');
     
           
        
